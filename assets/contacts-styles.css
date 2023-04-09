@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+label {
+	font-size: 1.5em;
+}
+
+input[type=name],input[type=text],input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 1px solid rgb(106, 89, 4);
+}
+
+.button {
+  background-color: rgba(76, 72, 46, 0.9);
+  margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+  border: 1px solid rgb(45, 39, 6);
+}
+
+.button:hover {
+  background-color: rgba(55, 52, 33, 0.9);
+}
+
+main .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.background-container {
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  background: -moz-linear-gradient(left,  rgba(173,166,121,0.9) 0%, rgba(173,166,121,0.9) 10%, rgba(173,166,121,0.9) 16%, rgba(173,166,121,0.9) 26%, rgba(173,166,121,0.9) 38%, rgba(194,188,152,0.9) 50%, rgba(207,202,173,0.9) 90%, rgba(207,202,173,0.9) 100%);
+  background: -webkit-linear-gradient(left,  rgba(173,166,121,0.9) 0%,rgba(173,166,121,0.9) 10%,rgba(173,166,121,0.9) 16%,rgba(173,166,121,0.9) 26%,rgba(173,166,121,0.9) 38%,rgba(194,188,152,0.9) 50%,rgba(207,202,173,0.9) 90%,rgba(207,202,173,0.9) 100%);
+  background: linear-gradient(to right,  rgba(173,166,121,0.9) 0%,rgba(173,166,121,0.9) 10%,rgba(173,166,121,0.9) 16%,rgba(173,166,121,0.9) 26%,rgba(173,166,121,0.9) 38%,rgba(194,188,152,0.9) 50%,rgba(207,202,173,0.9) 90%,rgba(207,202,173,0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ada679', endColorstr='#e6cfcaad',GradientType=1 );
+}
+
+.links {
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.links .logo-social {
+  width: 20%;
+}
+
+.git {
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  text-align: center;
+}
+
+.git a {
+  color: black;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.container-form {
+  padding: 12px 24px 24px 24px;
+	margin: 48px 12px;
+	background-color: rgba(173,166,121,0.9);
+  box-shadow: 0px 5px 10px 0px #67655f;
+	border-radius: 4px;
+}
+
+  
+  @media screen and (max-width: 750px) {
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .links {
+      flex-direction: row;
+      width: 90%;
+      margin-bottom: 50px;
+      margin-top: 100px;
+    }
+
+    .links .logo-social {
+      width: 10%;
+      margin-right: 40px;
+    }
+
+  }

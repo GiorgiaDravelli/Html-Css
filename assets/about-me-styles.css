@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: rgb(234, 244, 244);
+  background-image: url(/assets/images/about-me-photo.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment:fixed;
+}
+
+.story-container-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background: -moz-linear-gradient(left,  rgba(173,166,121,0.7) 0%, rgba(173,166,121,0.7) 10%, rgba(173,166,121,0.7) 16%, rgba(173,166,121,0.7) 26%, rgba(173,166,121,0.7) 38%, rgba(194,188,152,0.7) 50%, rgba(207,202,173,0.7) 90%, rgba(207,202,173,0.7) 100%);
+  background: -webkit-linear-gradient(left,  rgba(173,166,121,0.7) 0%,rgba(173,166,121,0.7) 10%,rgba(173,166,121,0.7) 16%,rgba(173,166,121,0.7) 26%,rgba(173,166,121,0.7) 38%,rgba(194,188,152,0.7) 50%,rgba(207,202,173,0.7) 90%,rgba(207,202,173,0.7) 100%);
+  background: linear-gradient(to right,  rgba(173,166,121,0.7) 0%,rgba(173,166,121,0.7) 10%,rgba(173,166,121,0.7) 16%,rgba(173,166,121,0.7) 26%,rgba(173,166,121,0.7) 38%,rgba(194,188,152,0.7) 50%,rgba(207,202,173,0.7) 90%,rgba(207,202,173,0.7) 100%);
+  }
+
+.story-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    font-size: 1.5em;
+    background-color: rgba(173,166,121,0.6);
+    box-shadow: 0px 5px 10px 0px #67655f;
+    width: 50%;
+    border-radius: 14px;
+  }
+
+  .story-row {
+    display: flex;
+    margin-left: 40%;
+    font-size: 2em;
+  }
+  
+  .story-info {
+    display: flex;
+    margin-top: 70px;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    font-size: 1.5em;
+    padding: 30px 0px 30px 50px;
+  }
+
+  .my-story {
+    width: 60%;
+  }
+
+  .book {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    width: 30%;
+    }
+
+  @media screen and (max-width: 750px) {
+    body {
+        background-image: url(/assets/images/about-me-photo-small.png);
+      }
+    .story-container {
+        width: 80%;
+    }
+    .story-row {
+        margin-left: 30%;
+      }
+      .book {
+        top: 10%;
+        left: 5%;
+        width: 60%;
+        }
+  }
+      
+  
